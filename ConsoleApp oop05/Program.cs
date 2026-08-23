@@ -54,3 +54,16 @@ namespace ConsoleApp_oop05
 //d) Can an extension method access private members of the class it extends ?
 //You do not have access to the private members
 #endregion
+#region question5
+//a) What is a Partial Class?
+//"partial class" allows a class to be split across multiple files, while the compiler treats it as a single class.
+
+//b) Why would a developer split one class into multiple files?
+//To facilitate teamwork, organization, and code readability.
+//c) What is a Partial Method?
+//A Partial Method is a method in a partial class that allows you to declare its signature without a body in one file,
+//and optionally write its body (implementation) in another file. If no body is provided, the compiler completely removes the method call.
+//d) What happens if a declared partial method has no implementation?
+//The program will not produce any errors (error-free): the code will execute and compile flawlessly.
+
+#endregion
