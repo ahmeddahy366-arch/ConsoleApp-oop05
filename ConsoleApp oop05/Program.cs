@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp_oop05
+﻿using System.Timers;
+
+namespace ConsoleApp_oop05
 {
     internal class Program
     {
@@ -28,4 +30,16 @@
 //In a deep copy, new and independent copies of reference - type members are created.
 //e) Give one situation where Deep Copy would be safer than Shallow Copy.
 //When I need to modify a copy without affecting the original, I use a deep copy.
+#endregion
+#region question3
+//a) What is a static field, and how is it different from an instance field?
+//A static field is shared by all objects of a class, while an instance field has a separate copy for each object.
+
+//b) What is a static method? Can a static method directly access instance members?
+//Belongs to the class and can be called without creating an object.
+//no
+//c) What is a static constructor, and when is it executed?
+//A static constructor initializes the static members of a class and is executed automatically once before the class is used for the first time.
+//d) What is a static class? Can you create an object from a static class?
+//A static class is a class from which objects(instances) cannot be created and which can only contain static members; you cannot instantiate a static class.
 #endregion
