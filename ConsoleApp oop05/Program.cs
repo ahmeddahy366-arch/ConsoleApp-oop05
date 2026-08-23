@@ -16,3 +16,16 @@
 //copying its reference Only the address was copied onto the stack, and we have two variables both pointing to the single instance on the heap.
 //Copying an Object: A new location is allocated in the heap memory, and a completely new, independent object is created containing a copy of the original object's data.
 #endregion
+#region question2
+
+//a) What is a Shallow Copy?
+//Shallow Copy = Copies the outer object, but the reference objects inside it remain shared.
+//b) What is a Deep Copy?
+//Deep Copy means creating a complete and independent copy of the object including the objects contained within it
+//c) What happens to reference-type members when a Shallow Copy is created
+//Reference type members point to the same object in both the original and the new copy.
+//d) What happens to reference-type members when a Deep Copy is created?
+//In a deep copy, new and independent copies of reference - type members are created.
+//e) Give one situation where Deep Copy would be safer than Shallow Copy.
+//When I need to modify a copy without affecting the original, I use a deep copy.
+#endregion
