@@ -44,24 +44,44 @@ namespace ConsoleApp_oop05
             //        Console.WriteLine(originalShipment.Destination.City);
             #endregion
             #region question8
-    //        Shipment originalShipment = new StandardShipment(
-    //"SH001",
-    //"Standard Shipment",
-    //4,
-    //60,
-    //0,
-    //new DeliveryAddress("Cairo", "Old Street", 10));
-    //        Console.WriteLine("befor change");
-    //        Shipment copiedshipment= originalShipment.DeepCopy();
-    //        Console.WriteLine(copiedshipment.Destination.City);
-    //        Console.WriteLine(originalShipment.Destination.City);
-    //        Console.WriteLine("aftar change");
-    //        copiedshipment.Destination.City = "Giza";
-    //        Console.WriteLine(copiedshipment.Destination.City);
-    //        Console.WriteLine(originalShipment.Destination.City);
+            //        Shipment originalShipment = new StandardShipment(
+            //"SH001",
+            //"Standard Shipment",
+            //4,
+            //60,
+            //0,
+            //new DeliveryAddress("Cairo", "Old Street", 10));
+            //        Console.WriteLine("befor change");
+            //        Shipment copiedshipment= originalShipment.DeepCopy();
+            //        Console.WriteLine(copiedshipment.Destination.City);
+            //        Console.WriteLine(originalShipment.Destination.City);
+            //        Console.WriteLine("aftar change");
+            //        copiedshipment.Destination.City = "Giza";
+            //        Console.WriteLine(copiedshipment.Destination.City);
+            //        Console.WriteLine(originalShipment.Destination.City);
 
 
 
+            #endregion
+            #region question9
+
+       //     Shipment originalShipment = new StandardShipment(
+       //  "SH001",
+       //  "Standard Shipment",
+       //  4,
+       //  60,
+       //  0,
+       //  new DeliveryAddress("Cairo", "Old Street", 10));
+       //     Shipment originalShipment2= new StandardShipment(
+       //"SH001",
+       //"Standard Shipment",
+       //4,
+       //60,
+       //0,
+       //new DeliveryAddress("Cairo", "Old Street", 10));
+
+
+            //Console.WriteLine(Shipment.TotalShipmentsCreated);
             #endregion
 
 

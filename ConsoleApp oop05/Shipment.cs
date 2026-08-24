@@ -6,6 +6,7 @@ namespace ConsoleApp_oop05
 {
     internal abstract class Shipment
     {
+        public static int TotalShipmentsCreated = 0;
         public string TrackingCode;
         public string Description;
         private decimal Weight;
@@ -128,7 +129,6 @@ namespace ConsoleApp_oop05
         public Shipment(string trackingCode) : this(trackingCode, "Unknown", 1, 50, new DeliveryAddress("Unknown", "Unknown",0))
         {
 
-
             TrackingCode = trackingCode;
             Description = "Unknown";
             Weight = 1;
@@ -139,6 +139,8 @@ namespace ConsoleApp_oop05
         }
         public Shipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination)
         {
+            TotalShipmentsCreated++;
+
             TrackingCode = trackingCode;
             Description = description;
             Weight = weight;
