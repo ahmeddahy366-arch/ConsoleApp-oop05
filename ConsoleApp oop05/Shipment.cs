@@ -183,7 +183,7 @@ namespace ConsoleApp_oop05
         //    S1.Destination = this.Destination.copy();
         //    return S1;
         //}
-        #endregion 
+        #endregion
         #region question10
 
         //static Shipment()
@@ -191,8 +191,15 @@ namespace ConsoleApp_oop05
         //    TotalShipmentsCreated = 0;
         //    Console.WriteLine("Shipment System Initialized");
         //}
+        #endregion
 
 
+
+        #region question11
+        public static int GetTotalShipmentsCreated()
+        {
+            return TotalShipmentsCreated;
+        }
         #endregion
 
     }
