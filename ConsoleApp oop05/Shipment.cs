@@ -6,6 +6,7 @@ namespace ConsoleApp_oop05
 {
     internal abstract partial class Shipment
     {
+        
         public static int TotalShipmentsCreated = 0;
         public string TrackingCode;
         public string Description;
@@ -149,6 +150,10 @@ namespace ConsoleApp_oop05
 
         }
 
+        partial void OnTrackingStatusChanged(string newStatus)
+        {
+            Console.WriteLine($"Tracking status changed to: {newStatus}");
+        }
         public void UpdateDeliveryFee(decimal newFee)
         {
             if (newFee > 0)

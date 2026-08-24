@@ -8,6 +8,7 @@ namespace ConsoleApp_oop05
 
     internal partial class Shipment
     {
+       partial void OnTrackingStatusChanged(string newStatus);
         public string TrackingStatus { get; set; } = "In Transit";
         public string GetTrackingStatus()
         {
@@ -18,6 +19,7 @@ namespace ConsoleApp_oop05
             if (!string.IsNullOrWhiteSpace(newStatus))
             {
                 TrackingStatus = newStatus;
+                OnTrackingStatusChanged(newStatus);
             }
         }
     }
