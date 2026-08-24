@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp_oop05
 {
-    public struct DeliveryAddress
+    public class DeliveryAddress
     {
         public string City;
         public string Street;
@@ -20,5 +20,12 @@ namespace ConsoleApp_oop05
         {
             return $" {City} , {Street} ,  {BuildingNumber}";
         }
+        #region question8
+
+        //public DeliveryAddress copy()
+        //{
+        //    return new DeliveryAddress(City,Street, BuildingNumber) ;
+        //}
+        #endregion
     }
 }

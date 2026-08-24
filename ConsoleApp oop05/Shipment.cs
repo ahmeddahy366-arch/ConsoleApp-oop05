@@ -4,13 +4,15 @@ using System.Text;
 
 namespace ConsoleApp_oop05
 {
-    internal abstract class Shipment
+    internal abstract partial class Shipment
     {
+        
+        public static int TotalShipmentsCreated = 0;
         public string TrackingCode;
         public string Description;
         private decimal Weight;
         private decimal DeliveryFee;
-        private DeliveryAddress _destination;
+        public DeliveryAddress _destination;
 
 
         public DeliveryAddress Destination
@@ -125,20 +127,21 @@ namespace ConsoleApp_oop05
 
 
 
-        public Shipment(string trackingCode) : this(trackingCode, "Unknown", 1, 50, new DeliveryAddress())
+        public Shipment(string trackingCode) : this(trackingCode, "Unknown", 1, 50, new DeliveryAddress("Unknown", "Unknown",0))
         {
-
 
             TrackingCode = trackingCode;
             Description = "Unknown";
             Weight = 1;
             DeliveryFee = 50;
-            _destination = new DeliveryAddress();
+            _destination = new DeliveryAddress("Unknown", "Unknown",0);
 
 
         }
         public Shipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination)
         {
+            TotalShipmentsCreated++;
+
             TrackingCode = trackingCode;
             Description = description;
             Weight = weight;
@@ -147,6 +150,10 @@ namespace ConsoleApp_oop05
 
         }
 
+        partial void OnTrackingStatusChanged(string newStatus)
+        {
+            Console.WriteLine($"Tracking status changed to: {newStatus}");
+        }
         public void UpdateDeliveryFee(decimal newFee)
         {
             if (newFee > 0)
@@ -161,6 +168,44 @@ namespace ConsoleApp_oop05
 
         public abstract void PrintShipment();
 
+        #region question6
+        //public Shipment CopyShipment()
+        //{
+        //    return (Shipment)this.MemberwiseClone();
+        //}
+
+        #endregion
+        #region question7
+        //public Shipment ShallowCopy()
+        //{
+        //    return (Shipment)this.MemberwiseClone();
+        //}
+        #endregion
+        #region question8
+        //public Shipment DeepCopy()
+        //{
+        //    Shipment S1= (Shipment)this.MemberwiseClone();
+        //    S1.Destination = this.Destination.copy();
+        //    return S1;
+        //}
+        #endregion
+        #region question10
+
+        //static Shipment()
+        //{
+        //    TotalShipmentsCreated = 0;
+        //    Console.WriteLine("Shipment System Initialized");
+        //}
+        #endregion
+
+
+
+        #region question11
+        public static int GetTotalShipmentsCreated()
+        {
+            return TotalShipmentsCreated;
+        }
+        #endregion
 
     }
 }

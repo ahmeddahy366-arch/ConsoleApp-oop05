@@ -28,7 +28,7 @@ namespace ConsoleApp_oop05
             get
             {
 
-                if (index >= 0 && index < Shipment.Length)
+                if (index >= 0 && index < Shipments.Length)
                     return Shipments[index];
 
                 return null;
