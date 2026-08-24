@@ -30,6 +30,20 @@ namespace ConsoleApp_oop05
             //      Console.WriteLine(ReferenceEquals(shipment1, shipment3));
             #endregion
             #region question7
+            //        Shipment originalShipment = new StandardShipment(
+            //"SH001",
+            //"Standard Shipment",
+            //4,
+            //60,
+            //0,
+            //new DeliveryAddress("Cairo", "Old Street", 10));
+            //        Shipment copyshipment = originalShipment.ShallowCopy();
+            //        Console.WriteLine(ReferenceEquals(copyshipment,originalShipment));
+            //        Console.WriteLine(ReferenceEquals(copyshipment.Destination, originalShipment.Destination));
+            //        copyshipment.Destination.City = "sohag";
+            //        Console.WriteLine(originalShipment.Destination.City);
+            #endregion
+            #region question8
     //        Shipment originalShipment = new StandardShipment(
     //"SH001",
     //"Standard Shipment",
@@ -37,11 +51,17 @@ namespace ConsoleApp_oop05
     //60,
     //0,
     //new DeliveryAddress("Cairo", "Old Street", 10));
-    //        Shipment copyshipment = originalShipment.ShallowCopy();
-    //        Console.WriteLine(ReferenceEquals(copyshipment,originalShipment));
-    //        Console.WriteLine(ReferenceEquals(copyshipment.Destination, originalShipment.Destination));
-    //        copyshipment.Destination.City = "sohag";
+    //        Console.WriteLine("befor change");
+    //        Shipment copiedshipment= originalShipment.DeepCopy();
+    //        Console.WriteLine(copiedshipment.Destination.City);
     //        Console.WriteLine(originalShipment.Destination.City);
+    //        Console.WriteLine("aftar change");
+    //        copiedshipment.Destination.City = "Giza";
+    //        Console.WriteLine(copiedshipment.Destination.City);
+    //        Console.WriteLine(originalShipment.Destination.City);
+
+
+
             #endregion
 
 

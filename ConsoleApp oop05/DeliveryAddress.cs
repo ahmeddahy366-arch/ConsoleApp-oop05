@@ -20,5 +20,12 @@ namespace ConsoleApp_oop05
         {
             return $" {City} , {Street} ,  {BuildingNumber}";
         }
+        #region question8
+
+        //public DeliveryAddress copy()
+        //{
+        //    return new DeliveryAddress(City,Street, BuildingNumber) ;
+        //}
+        #endregion
     }
 }

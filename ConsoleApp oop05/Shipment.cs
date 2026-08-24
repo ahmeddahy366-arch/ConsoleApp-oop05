@@ -174,7 +174,14 @@ namespace ConsoleApp_oop05
         //    return (Shipment)this.MemberwiseClone();
         //}
         #endregion
-
+        #region question8
+        //public Shipment DeepCopy()
+        //{
+        //    Shipment S1= (Shipment)this.MemberwiseClone();
+        //    S1.Destination = this.Destination.copy();
+        //    return S1;
+        //}
+        #endregion
 
 
 
