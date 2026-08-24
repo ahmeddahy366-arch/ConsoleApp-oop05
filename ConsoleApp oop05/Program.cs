@@ -7,6 +7,31 @@ namespace ConsoleApp_oop05
     {
         static void Main(string[] args)
         {
+            #region question6
+
+      //      Shipment shipment1 = new StandardShipment(
+      //"SH001",
+      //"Standard shipment",
+      //3,
+      //50,
+      //0,
+      //new DeliveryAddress("Cairo", "Street 1", 10));
+
+      //      Shipment shipment2 = shipment1;
+      //      string code = shipment2.TrackingCode = "c,dldc";
+      //      Console.WriteLine(code);
+      //      Console.WriteLine(shipment1.TrackingCode);
+      //      Console.WriteLine(ReferenceEquals(shipment1,shipment2));
+      //      //////////////////////////////////////////
+      //      Shipment shipment3 = shipment1.CopyShipment();
+      //     string code2= shipment3.TrackingCode = "wwwwww";
+      //      Console.WriteLine(code2);
+      //      Console.WriteLine(shipment1.TrackingCode);
+      //      Console.WriteLine(ReferenceEquals(shipment1, shipment3));
+            #endregion
+
+
+
         }
     }
 }

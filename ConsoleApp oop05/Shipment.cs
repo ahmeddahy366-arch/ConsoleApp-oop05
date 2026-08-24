@@ -161,6 +161,15 @@ namespace ConsoleApp_oop05
 
         public abstract void PrintShipment();
 
+        #region question6
+        //public Shipment CopyShipment()
+        //{
+        //    return (Shipment)this.MemberwiseClone();
+        //}
+
+        #endregion
+
+
 
     }
 }
