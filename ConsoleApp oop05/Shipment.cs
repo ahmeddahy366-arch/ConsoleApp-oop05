@@ -10,7 +10,7 @@ namespace ConsoleApp_oop05
         public string Description;
         private decimal Weight;
         private decimal DeliveryFee;
-        private DeliveryAddress _destination;
+        public DeliveryAddress _destination;
 
 
         public DeliveryAddress Destination
@@ -125,7 +125,7 @@ namespace ConsoleApp_oop05
 
 
 
-        public Shipment(string trackingCode) : this(trackingCode, "Unknown", 1, 50, new DeliveryAddress())
+        public Shipment(string trackingCode) : this(trackingCode, "Unknown", 1, 50, new DeliveryAddress("Unknown", "Unknown",0))
         {
 
 
@@ -133,7 +133,7 @@ namespace ConsoleApp_oop05
             Description = "Unknown";
             Weight = 1;
             DeliveryFee = 50;
-            _destination = new DeliveryAddress();
+            _destination = new DeliveryAddress("Unknown", "Unknown",0);
 
 
         }
@@ -168,6 +168,13 @@ namespace ConsoleApp_oop05
         //}
 
         #endregion
+        #region question7
+        //public Shipment ShallowCopy()
+        //{
+        //    return (Shipment)this.MemberwiseClone();
+        //}
+        #endregion
+
 
 
 

@@ -9,25 +9,39 @@ namespace ConsoleApp_oop05
         {
             #region question6
 
-      //      Shipment shipment1 = new StandardShipment(
-      //"SH001",
-      //"Standard shipment",
-      //3,
-      //50,
-      //0,
-      //new DeliveryAddress("Cairo", "Street 1", 10));
+            //      Shipment shipment1 = new StandardShipment(
+            //"SH001",
+            //"Standard shipment",
+            //3,
+            //50,
+            //0,
+            //new DeliveryAddress("Cairo", "Street 1", 10));
 
-      //      Shipment shipment2 = shipment1;
-      //      string code = shipment2.TrackingCode = "c,dldc";
-      //      Console.WriteLine(code);
-      //      Console.WriteLine(shipment1.TrackingCode);
-      //      Console.WriteLine(ReferenceEquals(shipment1,shipment2));
-      //      //////////////////////////////////////////
-      //      Shipment shipment3 = shipment1.CopyShipment();
-      //     string code2= shipment3.TrackingCode = "wwwwww";
-      //      Console.WriteLine(code2);
-      //      Console.WriteLine(shipment1.TrackingCode);
-      //      Console.WriteLine(ReferenceEquals(shipment1, shipment3));
+            //      Shipment shipment2 = shipment1;
+            //      string code = shipment2.TrackingCode = "c,dldc";
+            //      Console.WriteLine(code);
+            //      Console.WriteLine(shipment1.TrackingCode);
+            //      Console.WriteLine(ReferenceEquals(shipment1,shipment2));
+            //      //////////////////////////////////////////
+            //      Shipment shipment3 = shipment1.CopyShipment();
+            //     string code2= shipment3.TrackingCode = "wwwwww";
+            //      Console.WriteLine(code2);
+            //      Console.WriteLine(shipment1.TrackingCode);
+            //      Console.WriteLine(ReferenceEquals(shipment1, shipment3));
+            #endregion
+            #region question7
+    //        Shipment originalShipment = new StandardShipment(
+    //"SH001",
+    //"Standard Shipment",
+    //4,
+    //60,
+    //0,
+    //new DeliveryAddress("Cairo", "Old Street", 10));
+    //        Shipment copyshipment = originalShipment.ShallowCopy();
+    //        Console.WriteLine(ReferenceEquals(copyshipment,originalShipment));
+    //        Console.WriteLine(ReferenceEquals(copyshipment.Destination, originalShipment.Destination));
+    //        copyshipment.Destination.City = "sohag";
+    //        Console.WriteLine(originalShipment.Destination.City);
             #endregion
 
 
