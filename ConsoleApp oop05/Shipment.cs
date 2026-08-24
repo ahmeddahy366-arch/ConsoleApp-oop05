@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ConsoleApp_oop05
 {
-    internal abstract class Shipment
+    internal abstract partial class Shipment
     {
         public static int TotalShipmentsCreated = 0;
         public string TrackingCode;

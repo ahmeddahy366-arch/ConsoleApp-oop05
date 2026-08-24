@@ -118,16 +118,23 @@ namespace ConsoleApp_oop05
             //DeliveryUtilities.PrintSystemTitle();
             #endregion
             #region question13
-        //    Shipment shipment = new StandardShipment(
-        //"SH001",
-        //"Standard Shipment",
-        //3,
-        //60,
-        //0,
-        //new DeliveryAddress("Cairo", "Old Street", 10));
-        //    Console.WriteLine(shipment.GetSummary());
-        //    Console.WriteLine(shipment.IsDelivered());
+            //    Shipment shipment = new StandardShipment(
+            //"SH001",
+            //"Standard Shipment",
+            //3,
+            //60,
+            //0,
+            //new DeliveryAddress("Cairo", "Old Street", 10));
+            //    Console.WriteLine(shipment.GetSummary());
+            //    Console.WriteLine(shipment.IsDelivered());
             #endregion
+            #region question14      
+            //Shipment shipment = new StandardShipment("SH001", "Standard Shipment", 3, 60, 0, new DeliveryAddress("Cairo", "Old Street", 10));
+            //Console.WriteLine(shipment.GetTrackingStatus());
+            //shipment.UpdateTrackingStatus("deliver");
+            //Console.WriteLine(shipment.GetTrackingStatus());
+            #endregion
+
         }
     }
 }
