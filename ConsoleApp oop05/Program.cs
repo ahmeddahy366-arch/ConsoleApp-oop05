@@ -65,25 +65,35 @@ namespace ConsoleApp_oop05
             #endregion
             #region question9
 
-       //     Shipment originalShipment = new StandardShipment(
-       //  "SH001",
-       //  "Standard Shipment",
-       //  4,
-       //  60,
-       //  0,
-       //  new DeliveryAddress("Cairo", "Old Street", 10));
-       //     Shipment originalShipment2= new StandardShipment(
-       //"SH001",
-       //"Standard Shipment",
-       //4,
-       //60,
-       //0,
-       //new DeliveryAddress("Cairo", "Old Street", 10));
+            //     Shipment originalShipment = new StandardShipment(
+            //  "SH001",
+            //  "Standard Shipment",
+            //  4,
+            //  60,
+            //  0,
+            //  new DeliveryAddress("Cairo", "Old Street", 10));
+            //     Shipment originalShipment2= new StandardShipment(
+            //"SH001",
+            //"Standard Shipment",
+            //4,
+            //60,
+            //0,
+            //new DeliveryAddress("Cairo", "Old Street", 10));
 
 
             //Console.WriteLine(Shipment.TotalShipmentsCreated);
             #endregion
+            #region question10
 
+            #endregion
+        //    Shipment originalShipment1 = new StandardShipment(
+        //"SH001",
+        //"Standard Shipment",
+        //4,
+        //60,
+        //0,
+        //new DeliveryAddress("Cairo", "Old Street", 10)
+    );
 
 
         }

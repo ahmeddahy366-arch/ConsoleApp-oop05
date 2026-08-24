@@ -183,9 +183,17 @@ namespace ConsoleApp_oop05
         //    S1.Destination = this.Destination.copy();
         //    return S1;
         //}
+        #endregion 
+        #region question10
+
+        //static Shipment()
+        //{
+        //    TotalShipmentsCreated = 0;
+        //    Console.WriteLine("Shipment System Initialized");
+        //}
+
+
         #endregion
-
-
 
     }
 }
